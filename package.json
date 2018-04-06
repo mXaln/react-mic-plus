@@ -1,0 +1,25 @@
+{
+  "name": "react-mic-plus",
+  "version": "1.2.2",
+  "description": "Extended version of react-mic library",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "record",
+    "audio",
+    "mic",
+    "specrogram"
+  ],
+  "author": "mxaln",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "fawfawfawfaw"
+  }
+}
