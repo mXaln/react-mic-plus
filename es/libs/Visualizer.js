@@ -8,7 +8,8 @@ var Visualizer = {
     var bufferLength = analyser.fftSize;
     var dataArray = new Uint8Array(bufferLength);
 
-    canvasCtx.clearRect(0, 0, width, height);
+    canvasCtx.fillStyle = backgroundColor;
+    canvasCtx.fillRect(0, 0, width, height);
 
     function draw() {
 
@@ -16,6 +17,7 @@ var Visualizer = {
 
       analyser.getByteTimeDomainData(dataArray);
 
+      canvasCtx.clearRect(0, 0, width, height);
       canvasCtx.fillStyle = backgroundColor;
       canvasCtx.fillRect(0, 0, width, height);
 
@@ -53,13 +55,15 @@ var Visualizer = {
     var bufferLength = analyser.frequencyBinCount;
     var dataArray = new Uint8Array(bufferLength);
 
-    canvasCtx.clearRect(0, 0, width, height);
+    canvasCtx.fillStyle = backgroundColor;
+    canvasCtx.fillRect(0, 0, width, height);
 
     function draw() {
       drawVisual = requestAnimationFrame(draw);
 
       analyser.getByteFrequencyData(dataArray);
 
+      canvasCtx.clearRect(0, 0, width, height);
       canvasCtx.fillStyle = backgroundColor;
       canvasCtx.fillRect(0, 0, width, height);
 
