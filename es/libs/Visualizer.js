@@ -128,7 +128,7 @@ var Visualizer = {
       pitchSamples.push({"x": x, "freq": freq});
 
       x += speed;
-      if(x >= width){
+      if(x > width){
         shouldDraw = nonstop;
         
         x -= speed;
