@@ -120,7 +120,6 @@ var Visualizer = {
         timeThen = timeNow;
       timeDelta = (timeNow - timeThen) / 1000;
       timeThen = timeNow;
-
       
       var barHeight;
       var speed = (width/duration)*timeDelta;
